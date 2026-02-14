@@ -116,10 +116,30 @@ export function MainApp() {
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
-  // Initialize contacts from localStorage or defaults
+  // Initialize contacts from localStorage or defaults.
+  // Stored contacts may have their `icon` serialized by JSON; restore sensible Lucide icons here.
   const [emergencyContacts, setEmergencyContacts] = useState<EmergencyContact[]>(() => {
     const saved = localStorage.getItem("emergency_contacts");
-    if (saved) return JSON.parse(saved);
+    if (saved) {
+      try {
+        const parsed = JSON.parse(saved) as EmergencyContact[];
+        const restoreIcon = (c: any) => {
+          const n = String(c?.name || "").toLowerCase();
+          if (n.includes("emergency")) return AlertTriangle;
+          if (n.includes("police") || n.includes("helpline")) return Phone;
+          if (n.includes("friend") || n.includes("family")) return Users;
+          return Phone;
+        };
+
+        return parsed.map((p) => ({
+          ...p,
+          icon: typeof p?.icon === "function" || typeof p?.icon === "object" && (p.icon as any)?.$$typeof ? p.icon : restoreIcon(p),
+        }));
+      } catch (e) {
+        console.error("Failed to parse emergency contacts from storage:", e);
+      }
+    }
+
     return [
       { id: "1", name: "Emergency Services", number: "+91 8129791660", icon: AlertTriangle, color: "#ef4444", isPrimary: true },
       { id: "2", name: "Police", number: "+91 8129791660", icon: Phone, color: "#ef4444" },

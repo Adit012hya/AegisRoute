@@ -2,6 +2,8 @@ AegisRoute
 "Walk smarter, not just faster."
 
 AegisRoute is a premium, smart navigation platform specifically designed to enhance travel confidence for women. By moving beyond the traditional "shortest path" logic, AegisRoute utilizes real-time infrastructure density, business activity zones, and multi-point safety sampling to rank routes based on estimated safety signals.
+ 
+Working model : https://aegisroute.vercel.app/
 
 Features
 

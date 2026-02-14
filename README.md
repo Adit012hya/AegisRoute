@@ -1,70 +1,208 @@
-AegisRoute
-"Walk smarter, not just faster."
+# **AegisRoute**
 
-AegisRoute is a premium, smart navigation platform specifically designed to enhance travel confidence for women. By moving beyond the traditional "shortest path" logic, AegisRoute utilizes real-time infrastructure density, business activity zones, and multi-point safety sampling to rank routes based on estimated safety signals.
- 
-Working model : https://aegisroute.vercel.app/
+### *“Walk smarter, not just faster.”*
 
-Features
+AegisRoute is a premium smart navigation platform designed to enhance travel confidence for women. Instead of relying only on the traditional *shortest-path* logic, AegisRoute evaluates real-world safety signals such as infrastructure density, business activity zones, and emergency access points to recommend smarter and safer routes.
 
-Smart Multi-Route Selection: Fetches and classifies up to three distinct route alternatives: Safest, Neutral, and Shortest.
+**Live Application:**
+[https://aegisroute.vercel.app/](https://aegisroute.vercel.app/)
 
+---
 
-Advanced Safety Algorithm: Implements Multi-Point Sampling (checking 3-5 distinct points along a path) to evaluate police proximity, business density (cafes, pharmacies, retail), and hospital access.
+# **Features**
 
+### 🛣 Smart Multi-Route Selection
 
-LiquidEther Landing Page: A high-impact, interactive shader-based fluid background with GSAP-powered shuffle branding for a premium entry experience.
+Fetches and classifies up to three route alternatives:
 
+* **Safest Route**
+* **Neutral Route**
+* **Shortest Route**
 
-Crisis Management Module: A dedicated emergency interface featuring one-click WhatsApp/SMS location sharing and direct calling capabilities.
+---
 
-Real-time Infrastructure Visualization: Dynamic map markers for Police Stations (Blue), Hospitals (Red), and Safe Zones (White Flags).
+### Advanced Safety Algorithm
 
-Tech Stack
+Implements **Multi-Point Safety Sampling** (3–5 checkpoints along each route) to evaluate:
 
-Frontend: React (TypeScript), Vite, Tailwind CSS.
+* Police station proximity
+* Business density (cafés, pharmacies, retail stores)
+* Hospital accessibility
 
+Routes are ranked based on aggregated safety indicators.
 
-Animations: Framer Motion, GSAP (LiquidEther & Shuffle components).
+---
 
+### LiquidEther Landing Experience
 
-Mapping/APIs: Google Maps JavaScript API, Google Directions API, Google Places API.
+High-impact interactive shader-based fluid animation background with **GSAP-powered shuffle branding**, creating a premium first impression.
 
-State Management: React Hooks & Modular Service Architecture.
+---
 
-Architecture
-The project follows a modular component-based structure to ensure high performance and maintainability.
+### Crisis Management Module
 
-Installation & Setup
-Prerequisites
-Node.js installed.
+Dedicated emergency interface featuring:
 
-A valid Google Maps API Key with Places, Directions, and Maps JS enabled.
+* One-click WhatsApp location sharing
+* SMS location sharing
+* Direct emergency calling
+* Custom emergency contact management
 
-Installation
+---
 
-Run the Project
+# 🛠 **Tech Stack**
 
-Screenshots
-Landing Page: The LiquidEther interactive entry.
-![WhatsApp Image 2026-02-14 at 9 10 35 AM](https://github.com/user-attachments/assets/411f5fd3-7a6d-40eb-a798-ceb9abd20eb3)
+### Frontend
 
-Dashboard: The 70/30 split map and route selection panel.
-![WhatsApp Image 2026-02-14 at 9 10 34 AM](https://github.com/user-attachments/assets/271efcaa-81b1-42d0-a2fa-b0782dac0e34)
+* React (TypeScript)
+* Vite
+* Tailwind CSS
 
-Emergency Modal: The streamlined SOS and contact management interface.
-![WhatsApp Image 2026-02-14 at 9 10 34 AM (1)](https://github.com/user-attachments/assets/ed6edeaa-4e85-4d5f-a9ef-b3048aee0308)
+### Animations
 
-settings : Edit contact details
-![WhatsApp Image 2026-02-14 at 9 10 34 AM (2)](https://github.com/user-attachments/assets/454a0237-118a-477f-ab1d-bc868f9a29fe)
+* Framer Motion
+* GSAP (LiquidEther & Shuffle components)
 
-Demo
-https://youtu.be/0z5h0_8Ghqg
+### Mapping & APIs
 
-Team Members
+* Google Maps JavaScript API
+* Google Directions API
+* Google Places API
 
-Member 1: Ranjana K P
-Member 2: Adithya M
+### State Management
 
-License
-Distributed under the MIT License. See LICENSE for more information.
+* React Hooks
+* Modular Service Architecture
+
+---
+
+# 🏗 **Architecture**
+
+The application follows a modular, component-based architecture designed for:
+
+* High performance rendering
+* Clean separation of logic
+* Scalable service integration
+* Maintainable code structure
+
+Key Modules:
+
+* Route Engine
+* Safety Evaluation Service
+* Emergency Management Module
+* Map Visualization Layer
+* UI & Animation Layer
+
+---
+
+# ⚙️ **Installation & Setup**
+
+## Prerequisites
+
+* Node.js installed
+* A valid Google Maps API Key with:
+
+  * Maps JavaScript API enabled
+  * Places API enabled
+  * Directions API enabled
+
+---
+
+## Installation
+
+```bash
+git clone https://github.com/Adit012hya/AegisRoute.git
+cd AegisRoute
+npm install
+```
+
+---
+
+## Environment Configuration
+
+Create a `.env` file in the root directory:
+
+```env
+VITE_GOOGLE_MAPS_API_KEY=your_api_key_here
+```
+
+⚠️ Do not commit your `.env` file.
+
+---
+
+## Run the Project
+
+```bash
+npm run dev
+```
+
+The app will run at:
+
+```
+http://localhost:5173
+```
+
+---
+
+## Build for Production
+
+```bash
+npm run build
+```
+
+Output folder:
+
+```
+dist/
+```
+
+---
+
+# 📸 **Screenshots**
+
+### Landing Page – LiquidEther Interactive Entry
+
+![Landing](https://github.com/user-attachments/assets/411f5fd3-7a6d-40eb-a798-ceb9abd20eb3)
+
+---
+
+### Dashboard – 70/30 Map & Route Panel
+
+![Dashboard](https://github.com/user-attachments/assets/271efcaa-81b1-42d0-a2fa-b0782dac0e34)
+
+---
+
+### Emergency Modal – SOS & Contact Interface
+
+![Emergency](https://github.com/user-attachments/assets/ed6edeaa-4e85-4d5f-a9ef-b3048aee0308)
+
+---
+
+### Settings – Contact Management
+
+![Settings](https://github.com/user-attachments/assets/454a0237-118a-477f-ab1d-bc868f9a29fe)
+
+---
+
+# **Demo Video**
+
+Watch the full demo here:
+
+[https://youtu.be/0z5h0_8Ghqg](https://youtu.be/0z5h0_8Ghqg)
+
+---
+
+# **Team Members**
+
+* **Ranjana K P**
+* **Adithya M**
+
+---
+
+# **License**
+
+Distributed under the **MIT License**.
+See the `LICENSE` file for more information.
+
+---
+

@@ -11,7 +11,7 @@ AegisRoute is a premium smart navigation platform designed to enhance travel con
 
 # **Features**
 
-### 🛣 Smart Multi-Route Selection
+###Smart Multi-Route Selection
 
 Fetches and classifies up to three route alternatives:
 
@@ -50,7 +50,7 @@ Dedicated emergency interface featuring:
 
 ---
 
-# 🛠 **Tech Stack**
+#**Tech Stack**
 
 ### Frontend
 
@@ -68,6 +68,7 @@ Dedicated emergency interface featuring:
 * Google Maps JavaScript API
 * Google Directions API
 * Google Places API
+* Google Geocoding API
 
 ### State Management
 
@@ -76,7 +77,7 @@ Dedicated emergency interface featuring:
 
 ---
 
-# 🏗 **Architecture**
+#**Architecture**
 
 The application follows a modular, component-based architecture designed for:
 
@@ -95,7 +96,7 @@ Key Modules:
 
 ---
 
-# ⚙️ **Installation & Setup**
+#**Installation & Setup**
 
 ## Prerequisites
 
@@ -158,7 +159,7 @@ dist/
 
 ---
 
-# 📸 **Screenshots**
+#**Screenshots**
 
 ### Landing Page – LiquidEther Interactive Entry
 

@@ -141,10 +141,10 @@ export function MainApp() {
     }
 
     return [
-      { id: "1", name: "Emergency Services", number: "+91 8129791660", icon: AlertTriangle, color: "#ef4444", isPrimary: true },
-      { id: "2", name: "Police", number: "+91 8129791660", icon: Phone, color: "#ef4444" },
-      { id: "3", name: "Women Helpline", number: "+91 8129791660", icon: Phone, color: "#ef4444" },
-      { id: "4", name: "Friend/Family", number: "+91 8129791660", icon: Users, color: "#3b82f6" },
+      { id: "1", name: "Emergency Services", number: "1234567890", icon: AlertTriangle, color: "#ef4444", isPrimary: true },
+      { id: "2", name: "Police", number: "1234567890", icon: Phone, color: "#ef4444" },
+      { id: "3", name: "Women Helpline", number: "1234567890", icon: Phone, color: "#ef4444" },
+      { id: "4", name: "Friend/Family", number: "1234567890", icon: Users, color: "#3b82f6" },
     ];
   });
 

@@ -1,0 +1,75 @@
+﻿node.exe : [31mΓ£ù[39m 
+Build failed in 53ms
+At line:1 char:1
++ & "C:\Program 
+Files\nodejs/node.exe" 
+"C:\Program 
+Files\nodejs/node_mo ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~
+    + CategoryInfo           
+   : NotSpecified: ([31mΓ£  
+  ù[39m Build failed in 5   
+ 3ms:String) [], RemoteEx    
+ception
+    + FullyQualifiedErrorId  
+   : NativeCommandError
+ 
+[31merror during build:
+[31m[vite]: Rollup failed 
+to resolve import 
+"react/jsx-runtime" from "C:/
+PROJECT/AegisRoute/src/main.t
+sx".
+This is most likely 
+unintended because it can 
+break your application at 
+runtime.
+If you do want to 
+externalize this module 
+explicitly add it to
+`build.rollupOptions.external
+`[31m
+    at viteLog (file:///C:/PR
+OJECT/AegisRoute/node_modules
+/vite/dist/node/chunks/dep-DB
+xKXgDP.js:46345:15)
+    at file:///C:/PROJECT/Aeg
+isRoute/node_modules/vite/dis
+t/node/chunks/dep-DBxKXgDP.js
+:46403:18
+    at onwarn (file:///C:/PRO
+JECT/AegisRoute/node_modules/
+@vitejs/plugin-react/dist/ind
+ex.js:90:7)
+    at file:///C:/PROJECT/Aeg
+isRoute/node_modules/vite/dis
+t/node/chunks/dep-DBxKXgDP.js
+:46401:7
+    at onRollupLog (file:///C
+:/PROJECT/AegisRoute/node_mod
+ules/vite/dist/node/chunks/de
+p-DBxKXgDP.js:46393:5)
+    at onLog (file:///C:/PROJ
+ECT/AegisRoute/node_modules/v
+ite/dist/node/chunks/dep-DBxK
+XgDP.js:46043:7)
+    at file:///C:/PROJECT/Aeg
+isRoute/node_modules/rollup/d
+ist/es/shared/node-entry.js:2
+0958:32
+    at Object.logger [as 
+onLog] (file:///C:/PROJECT/Ae
+gisRoute/node_modules/rollup/
+dist/es/shared/node-entry.js:
+22945:9)
+    at ModuleLoader.handleInv
+alidResolvedId (file:///C:/PR
+OJECT/AegisRoute/node_modules
+/rollup/dist/es/shared/node-e
+ntry.js:21689:26)
+    at file:///C:/PROJECT/Aeg
+isRoute/node_modules/rollup/d
+ist/es/shared/node-entry.js:2
+1647:26[39m
